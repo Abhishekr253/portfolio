@@ -1,0 +1,29 @@
+
+@import "tailwindcss";
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#050505;
+
+    color:white;
+
+    overflow-x:hidden;
+
+    font-family:'Inter',sans-serif;
+}
+
+h1,h2,h3,h4{
+
+    font-family:'Space Grotesk',sans-serif;
+
+}
+
+code{
+
+    font-family:'JetBrains Mono',monospace;
+
+}

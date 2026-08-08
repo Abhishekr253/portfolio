@@ -1,0 +1,796 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ================================= */
+/* HERO */
+/* ================================= */
+
+.servicesHero{
+  position:relative;
+
+  width:100%;
+  height:100vh;
+
+  overflow:hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ================================= */
+/* Background Video */
+/* ================================= */
+
+.servicesVideo{
+  position:absolute;
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  z-index:1;
+}
+
+/* ================================= */
+/* Overlay */
+/* ================================= */
+
+.servicesOverlay{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+      rgba(0,0,0,.75),
+      rgba(0,0,0,.55),
+      rgba(0,0,0,.80)
+  );
+
+  z-index:2;
+}
+
+/* ================================= */
+/* Content */
+/* ================================= */
+
+.servicesContent{
+  position:relative;
+
+  z-index:5;
+
+  width:min(950px,92%);
+
+  text-align:center;
+
+  color:white;
+}
+
+/* ================================= */
+
+.servicesTag{
+
+  display:inline-flex;
+
+  justify-content:center;
+  align-items:center;
+
+  padding:12px 24px;
+
+  border-radius:999px;
+
+  background:#ffee00;
+
+  color:#111;
+
+  font-size:14px;
+  font-weight:700;
+
+  letter-spacing:.12em;
+
+  margin-bottom:40px;
+}
+
+/* ================================= */
+
+.servicesTitle{
+
+  font-size:clamp(4rem,8vw,7rem);
+
+  line-height:.92;
+
+  font-weight:900;
+
+  letter-spacing:-.05em;
+
+  margin-bottom:35px;
+}
+
+/* ================================= */
+
+.servicesSubtitle{
+
+  width:min(760px,95%);
+
+  margin:auto;
+
+  color:rgba(255,255,255,.78);
+
+  font-size:21px;
+
+  line-height:1.8;
+
+  margin-bottom:60px;
+}
+
+/* ================================= */
+/* Explore Button */
+/* ================================= */
+
+.exploreBtn{
+
+  width:220px;
+  height:64px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:#ffee00;
+
+  color:#111;
+
+  font-size:18px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.35s;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  gap:14px;
+}
+
+.exploreBtn:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:0 18px 45px rgba(255,238,0,.25);
+}
+
+.exploreArrow{
+
+  font-size:22px;
+
+  display:inline-flex;
+}
+
+/* ================================= */
+/* Showcase Placeholder */
+/* ================================= */
+
+.servicesShowcase{
+
+  width:100%;
+
+  min-height:100vh;
+
+  background:#0f0f0f;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ================================= */
+/* Large Desktop */
+/* ================================= */
+
+@media(min-width:1600px){
+
+.servicesTitle{
+
+  font-size:8rem;
+}
+
+.servicesSubtitle{
+
+  font-size:24px;
+}
+
+}
+
+/* ================================= */
+/* Laptop */
+/* ================================= */
+
+@media(max-width:1200px){
+
+.servicesTitle{
+
+  font-size:5rem;
+}
+
+.servicesSubtitle{
+
+  font-size:19px;
+}
+
+}
+
+/* ================================= */
+/* Tablet */
+/* ================================= */
+
+@media(max-width:992px){
+
+.servicesTitle{
+
+  font-size:4rem;
+}
+
+.servicesSubtitle{
+
+  font-size:18px;
+}
+
+.exploreBtn{
+
+  width:200px;
+  height:58px;
+
+  font-size:16px;
+}
+
+}
+
+/* ================================= */
+/* Mobile */
+/* ================================= */
+
+@media(max-width:768px){
+
+.servicesHero{
+
+  height:100svh;
+}
+
+.servicesContent{
+
+  width:92%;
+}
+
+.servicesTag{
+
+  padding:10px 18px;
+
+  font-size:12px;
+
+  margin-bottom:28px;
+}
+
+.servicesTitle{
+
+  font-size:3rem;
+
+  line-height:1;
+}
+
+.servicesSubtitle{
+
+  font-size:16px;
+
+  line-height:1.7;
+
+  margin-bottom:40px;
+}
+
+.exploreBtn{
+
+  width:190px;
+  height:52px;
+
+  font-size:15px;
+
+  border-radius:14px;
+}
+
+}
+
+/* ================================= */
+/* Small Mobile */
+/* ================================= */
+
+@media(max-width:480px){
+
+.servicesTitle{
+
+  font-size:2.5rem;
+}
+
+.servicesSubtitle{
+
+  font-size:15px;
+}
+
+.exploreBtn{
+
+  width:180px;
+}
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.carouselSection{
+    width:100%;
+    max-width:1100px;   /* was 1700px — narrower whole carousel */
+    margin:auto;
+    padding:120px 0;
+    color:#fff;
+}
+
+.carouselTitle{
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    margin-bottom:18px;
+
+    font-weight:900;
+
+    line-height:.9;
+
+    text-align:center;
+}
+
+.carouselSubtitle{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    color:#a7a7a7;
+
+    line-height:1.8;
+
+    font-size:18px;
+}
+
+/* ===========================
+   WRAPPER / VIEWPORT / TRACK
+=========================== */
+
+.carouselWrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:0 20px;
+}
+
+/* Clips the track so only the visible row of cards shows; the track
+   itself can be wider than this and slides via transform. */
+.carouselViewport{
+    overflow:visible;   /* was hidden — only 3 fixed slots now, no clipping needed */
+    width:100%;
+    padding:40px 0 20px;
+}
+
+
+.carouselTrack{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+    width:100%;
+}
+
+
+/* ===========================
+   CARD
+=========================== */
+
+.serviceCard{
+    flex:none;
+    cursor:pointer;
+    transform-origin:center bottom;
+    transition:opacity .3s ease;
+}
+
+.sideCard{
+    width:180px;
+    opacity:.5;
+}
+
+.sideCard .videoWrapper{
+    height:220px;
+}
+
+.sideCard .serviceInfo p{
+    display:none; /* keep side cards compact — no description */
+}
+
+
+
+.activeCard{
+    width:340px;
+    opacity:1;
+}
+
+/* ===========================
+   VIDEO
+=========================== */
+
+.videoWrapper{
+    position:relative;
+
+    width:100%;
+
+    height:320px;
+
+    overflow:hidden;
+
+    border-radius:26px;
+
+    background:#0d0d0d;
+
+    border:3px solid transparent;
+
+    transition:height .55s cubic-bezier(.22,.61,.36,1),
+               border-color .55s ease,
+               box-shadow .55s ease;
+}
+
+.activeCard .videoWrapper{
+    height:360px;
+    border-color:#ffee00;
+    box-shadow:
+        0 20px 80px rgba(255,238,0,.22),
+        0 40px 120px rgba(0,0,0,.45);
+}
+
+.poster,
+.serviceVideo{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.poster{
+
+    z-index:1;
+
+    transition:opacity .6s ease;
+}
+
+.serviceVideo{
+
+    z-index:2;
+
+    opacity:0;
+
+    transition:opacity .6s ease;
+}
+
+.showVideo{
+
+    opacity:1;
+}
+
+.showVideo ~ .poster,
+.serviceCard:has(.showVideo) .poster{
+
+    opacity:0;
+}
+
+/* ===========================
+   INFO
+=========================== */
+
+.serviceInfo{
+
+    margin-top:26px;
+
+    text-align:center;
+}
+
+.serviceInfo span{
+
+    color:#ffee00;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.15em;
+
+    font-weight:700;
+}
+
+.serviceInfo h3{
+
+    margin:10px 0 14px;
+
+    font-size:1.6rem;
+
+    font-weight:800;
+
+    transition:font-size .55s ease;
+}
+
+.activeCard .serviceInfo h3{
+
+    font-size:1.9rem;
+}
+
+.serviceInfo p{
+
+    color:#bdbdbd;
+
+    line-height:1.75;
+
+    font-size:14px;
+
+    max-width:34ch;
+
+    margin:0 auto;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.navBtn{
+
+    width:60px;
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1c1c1c;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+    line-height:1;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:background .3s ease, color .3s ease, transform .3s ease;
+
+    flex-shrink:0;
+}
+
+.navBtn:hover{
+
+    background:#ffee00;
+
+    color:#111;
+
+    transform:scale(1.08);
+}
+
+.navBtn:active{
+
+    transform:scale(.96);
+}
+
+/* ===========================
+   DOTS
+=========================== */
+
+.carouselDots{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+}
+
+.dot{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#4a4a4a;
+
+    cursor:pointer;
+
+    transition:width .35s ease, background .35s ease;
+}
+
+.dot:hover{
+
+    background:#8a8a8a;
+}
+
+.activeDot{
+
+    width:30px;
+
+    border-radius:999px;
+
+    background:#ffee00;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:1100px){
+
+.carouselWrapper{
+
+    gap:16px;
+}
+
+.serviceCard{
+
+    width:230px;
+}
+
+.activeCard{
+
+    width:320px;
+}
+
+.videoWrapper{
+
+    height:290px;
+}
+
+.activeCard .videoWrapper{
+
+    height:350px;
+}
+
+.serviceInfo h3{
+
+    font-size:1.4rem;
+}
+
+.activeCard .serviceInfo h3{
+
+    font-size:1.7rem;
+}
+
+}
+
+/* ===========================
+   MOBILE
+   Falls back to native horizontal scroll-snap; the JS skips its
+   transform/scale logic below this breakpoint (see isMobile()).
+=========================== */
+
+@media(max-width:768px){
+
+.carouselViewport{
+
+    overflow-x:auto;
+
+    padding:20px 0;
+
+    scroll-snap-type:x mandatory;
+}
+
+.carouselViewport::-webkit-scrollbar{
+
+    display:none;
+}
+
+.carouselTrack{
+
+    width:max-content;
+
+    transform:none !important;
+
+    padding:0 20px;
+}
+
+.serviceCard{
+
+    width:82vw;
+
+    max-width:340px;
+
+    scroll-snap-align:center;
+
+    opacity:1;
+
+    transform:none !important;
+
+    filter:none !important;
+}
+
+.activeCard{
+
+    width:82vw;
+
+    max-width:340px;
+}
+
+.videoWrapper,
+.activeCard .videoWrapper{
+
+    height:280px;
+}
+
+.navBtn{
+
+    display:none;
+}
+
+.carouselTitle{
+
+    font-size:2.6rem;
+}
+
+.carouselSubtitle{
+
+    font-size:16px;
+
+    margin-bottom:40px;
+}
+
+.serviceInfo h3,
+.activeCard .serviceInfo h3{
+
+    font-size:1.4rem;
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media(max-width:480px){
+
+.serviceCard,
+.activeCard{
+
+    width:90vw;
+}
+
+.videoWrapper,
+.activeCard .videoWrapper{
+
+    height:230px;
+}
+
+.carouselTitle{
+
+    font-size:2.2rem;
+}
+
+}

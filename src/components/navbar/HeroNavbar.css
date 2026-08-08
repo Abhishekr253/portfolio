@@ -1,0 +1,270 @@
+.heroNavbar {
+  position: absolute;
+
+  top: 24px;
+  left: 48px;
+  right: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 9999;
+
+  opacity: 0;
+
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+/* Logo */
+
+.logo {
+  background: #ffee00;
+
+  color: #111;
+
+  width: 86px;
+  height: 56px;
+
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  font-weight: 900;
+
+  flex-shrink: 0;
+}
+
+/* Navigation */
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+
+  margin-left: 60px;
+
+  margin-right: auto;
+}
+
+.navLinks a {
+  text-decoration: none;
+
+  color: #111;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.05em;
+
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: #ffee00;
+}
+
+/* Call Button */
+
+.callBtn {
+  height: 56px;
+
+  padding: 0 28px;
+
+  margin-right: 14px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: #ffee00;
+
+  color: #111;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.35s;
+}
+
+.callBtn:hover {
+  transform: translateY(-3px);
+}
+
+/* Menu */
+
+.menuBtn {
+  width: 56px;
+  height: 56px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: #fff;
+
+  color: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: 0.35s;
+}
+
+.menuBtn:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= Tablet ================= */
+
+@media (max-width: 1024px) {
+  .heroNavbar {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+    right: 18px;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 9999;
+
+    opacity: 0;
+  }
+
+  .callBtn {
+    height: 55px;
+
+    padding: 0 16px;
+
+    margin-left: auto;
+
+    margin-right: 8px;
+
+    font-size: 14px;
+
+    border-radius: 10px;
+  }
+  .mobileMenu {
+    display: flex;
+  }
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width: 768px) {
+  .heroNavbar {
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    display: flex;
+  }
+
+  /* Hide desktop links */
+
+  .navLinks {
+    display: none;
+  }
+
+  .logo {
+    width: 58px;
+    height: 40px;
+
+    font-size: 14px;
+
+    border-radius: 10px;
+  }
+
+  .callBtn {
+    height: 40px;
+
+    padding: 0 16px;
+
+    margin-left: auto;
+
+    margin-right: 8px;
+
+    font-size: 14px;
+
+    border-radius: 10px;
+  }
+
+  .menuBtn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+  }
+  .mobileMenu {
+    display: flex;
+  }
+}
+
+/* Mobile Dropdown */
+
+.mobileMenu {
+  position: absolute;
+
+  top: 80px;
+  left: 18px;
+  right: 18px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  backdrop-filter: blur(20px);
+
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-15px);
+
+  transition: 0.35s;
+
+  z-index: 9998;
+}
+
+.mobileMenu a {
+  padding: 18px 20px;
+
+  text-decoration: none;
+
+  color: #111;
+
+  font-weight: 700;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mobileMenu a:last-child {
+  border-bottom: none;
+}
+
+.mobileMenu.show {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}

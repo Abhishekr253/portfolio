@@ -1,0 +1,321 @@
+/* ================= LEFT EXPERIENCE ================= */
+
+.experienceCard {
+  position: absolute;
+
+  left: 68%;
+
+  top: 55%;
+
+  width: 180px;
+  height: 190px;
+
+  border-radius: 24px;
+
+  background: rgba(0, 0, 0, 0.42);
+
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+
+  z-index: 20;
+
+  opacity: 0;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.experienceCard h2 {
+  margin: 0;
+
+  font-size: 5rem;
+
+  line-height: 1;
+
+  color: #ffee00;
+
+  font-weight: 900;
+}
+
+.experienceCard p {
+  margin-top: 10px;
+
+  font-size: 1.05rem;
+
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  width: 80%;
+}
+
+/* ================= RIGHT SKILLS ================= */
+
+.skillsCard {
+  position: absolute;
+
+  left: 20%;
+
+  top: 55%;
+
+  width: 210px;
+
+  padding: 22px;
+
+  border-radius: 24px;
+
+  background: rgba(0, 0, 0, 0.42);
+
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  color: white;
+
+  z-index: 20;
+
+  opacity: 0;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.skillsCard span {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+/* ================= Laptop ================= */
+
+@media (max-width: 1440px) {
+  .skillsCard {
+    right: 8%;
+
+    width: 185px;
+  }
+
+  .skillsCard span {
+    font-size: 15px;
+  }
+
+  .experienceCard {
+    left: 8%;
+
+    width: 165px;
+
+    height: 170px;
+  }
+
+  .experienceCard h2 {
+    font-size: 4.3rem;
+  }
+}
+
+/* ================= Tablet ================= */
+
+@media (max-width: 1024px) {
+  .skillsCard {
+    left: 24px;
+    top: 50%;
+
+    width: 150px;
+    padding: 16px;
+  }
+
+  .skillsCard span {
+    font-size: 14px;
+  }
+
+  .experienceCard {
+    left: 69%;
+    top: 50%;
+
+    width: 145px;
+    height: 150px;
+  }
+
+  .experienceCard h2 {
+    font-size: 3.5rem;
+  }
+
+  .experienceCard p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width: 768px) {
+  .skillsCard {
+    left: 56px;
+    top: 38%;
+
+    width: 135px;
+
+    padding: 14px;
+
+    gap: 8px;
+
+    border-radius: 14px;
+  }
+
+  .skillsCard span {
+    font-size: 17px;
+  }
+
+  .experienceCard {
+    left: 73%;
+    top: 45%;
+
+    width: 125px;
+    height: 110px;
+
+    border-radius: 14px;
+  }
+
+  .experienceCard h2 {
+    font-size: 2.5rem;
+  }
+
+  .experienceCard p {
+    font-size: 0.75rem;
+
+    padding: 0 8px;
+  }
+}
+
+/* ================= Small Mobile ================= */
+
+@media (max-width: 480px) {
+  .skillsCard {
+    left: 12px;
+    top: 36%;
+
+    width: 105px;
+
+    padding: 12px;
+  }
+
+  .skillsCard span {
+    font-size: 11px;
+  }
+
+  .experienceCard {
+    left: 69%;
+    top: 40%;
+
+    width: 96px;
+    height: 100px;
+  }
+
+  .experienceCard h2 {
+    font-size: 2.2rem;
+  }
+
+  .experienceCard p {
+    font-size: 0.7rem;
+  }
+}
+
+
+
+/* ================= Bottom Left Text ================= */
+
+.leftCaption{
+  position:absolute;
+  left: 50px;
+  bottom:55px;
+
+  width:220px;
+
+  color:#111;
+
+  z-index:20;
+}
+
+.leftCaption p{
+  margin:0;
+  font-size:18px;
+  line-height:1.5;
+  font-weight:500;
+}
+
+.leftCaption p:last-child{
+  margin-top:6px;
+}
+
+
+/* ================= Bottom Right Text ================= */
+
+.rightCaption{
+  position:absolute;
+  right:50px;
+  bottom:55px;
+
+  width:360px;
+
+  color:#2b2b2b;
+
+  font-size:18px;
+  line-height:1.8;
+  font-weight:500;
+
+  z-index:20;
+}
+
+
+/* ================= Laptop ================= */
+
+@media (max-width:1440px){
+
+  .leftCaption{
+    left:35px;
+    width:200px;
+  }
+
+  .rightCaption{
+    right:35px;
+    width:300px;
+    font-size:16px;
+  }
+
+}
+
+
+/* ================= Tablet ================= */
+
+@media (max-width:1024px){
+
+  .leftCaption,
+  .rightCaption{
+    display:none;
+  }
+
+}
+
+
+/* ================= Mobile ================= */
+
+@media (max-width:768px){
+
+  .leftCaption,
+  .rightCaption{
+    display:none;
+  }
+
+}
