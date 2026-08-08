@@ -170,7 +170,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={heroRef} className="hero">
+    <section ref={heroRef} className="hero" id="hero">
       <HeroNavbar ref={navbarRef} />
 
       <h1 ref={textRef} className="bgText">

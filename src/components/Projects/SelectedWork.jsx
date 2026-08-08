@@ -102,7 +102,7 @@ function ProjectCard({ project, index }) {
 
 export default function SelectedWork() {
   return (
-    <section className="sw-section" id="work">
+    <section className="sw-section" id="projects">
       <div className="sw-header">
         <span className="sw-badge">Featured Projects</span>
         <h2 className="sw-heading">Selected Work.</h2>

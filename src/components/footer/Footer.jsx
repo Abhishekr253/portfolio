@@ -76,7 +76,7 @@ export default function Footer() {
 
             <h4>Quick Links</h4>
 
-            <button onClick={() => scrollTo("home")}>
+            <button onClick={() => scrollTo("hero")}>
               Home
             </button>
 
@@ -101,17 +101,17 @@ export default function Footer() {
 
             <h4>Connect</h4>
 
-            <a
+            {/* <a
               href="https://instagram.com/"
               target="_blank"
               rel="noreferrer"
             >
               <FaInstagram />
               Instagram
-            </a>
+            </a> */}
 
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/abhishek-r-633385282/"
               target="_blank"
               rel="noreferrer"
             >
@@ -120,7 +120,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.fiverr.com/"
+              href="https://www.fiverr.com/abhishekr601?public_mode=true"
               target="_blank"
               rel="noreferrer"
             >

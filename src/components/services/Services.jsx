@@ -75,7 +75,7 @@ export default function Services() {
 
   return (
     <>
-      <section className="servicesHero" ref={sectionRef}>
+      <section className="servicesHero" ref={sectionRef} id="services">
         {/* Background Video */}
         <video className="servicesVideo" autoPlay muted loop playsInline>
           <source src="/videos/bg-video.mp4" type="video/mp4" />
