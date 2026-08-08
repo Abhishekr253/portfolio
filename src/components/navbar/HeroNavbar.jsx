@@ -1,35 +1,46 @@
 import "./HeroNavbar.css";
 import { Menu, X } from "lucide-react";
-import { forwardRef, useState } from "react";
+import { forwardRef, useCallback, useState } from "react";
+
+const NAV_LINKS = [
+  { href: "#about", label: "ABOUT" },
+  { href: "#projects", label: "WORK" },
+  { href: "#services", label: "SERVICES" },
+  { href: "#contact", label: "CONTACT" },
+];
 
 const HeroNavbar = forwardRef((props, ref) => {
   const [open, setOpen] = useState(false);
 
+  const toggleMenu = useCallback(() => setOpen((v) => !v), []);
+  const closeMenu = useCallback(() => setOpen(false), []);
+
   return (
     <>
       <nav ref={ref} className="heroNavbar">
-        <div className="logo">
-          ABHI
+        <div className="logo">ABHI</div>
+
+        <div className="navLinks">
+          {NAV_LINKS.map(({ href, label }) => (
+            <a key={href} href={href}>
+              {label}
+            </a>
+          ))}
         </div>
 
-        <button className="callBtn">
-          Book a Call
-        </button>
+        <button className="callBtn">Book a Call</button>
 
-        <button
-          className="menuBtn"
-          onClick={() => setOpen(!open)}
-        >
+        <button className="menuBtn" onClick={toggleMenu} aria-label="Toggle menu">
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       <div className={`mobileMenu ${open ? "show" : ""}`}>
-        <a href="#about" onClick={() => setOpen(false)}>ABOUT</a>
-        <a href="#projects" onClick={() => setOpen(false)}>WORK</a>
-        <a href="#services" onClick={() => setOpen(false)}>SERVICES</a>
-        <a href="#contact" onClick={() => setOpen(false)}>CONTACT</a>
+        {NAV_LINKS.map(({ href, label }) => (
+          <a key={href} href={href} onClick={closeMenu}>
+            {label}
+          </a>
+        ))}
       </div>
     </>
   );

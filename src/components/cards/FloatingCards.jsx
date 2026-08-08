@@ -1,18 +1,24 @@
-import { BrickWallFire, CreativeCommons, Rocket, Sparkles } from "lucide-react";
+import { CreativeCommons, Rocket, BrickWallFire, Sparkles } from "lucide-react";
 import "./FloatingCards.css";
 import { forwardRef } from "react";
+
+const SKILLS = [
+  { icon: CreativeCommons, label: "Creative" },
+  { icon: Rocket, label: "Reliable" },
+  { icon: BrickWallFire, label: "Builder" },
+  { icon: Sparkles, label: "Efficient" },
+];
 
 const FloatingCards = forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <div className="skillsCard">
-        <span><CreativeCommons color="#ffee00" size={18}/> Creative</span>
-        <span><Rocket color="#ffee00" size={18}/> Reliable</span>
-        <span>
-  <BrickWallFire color="#ffee00" size={18} />
-  Builder
-</span>
-        <span><Sparkles color="#ffee00" size={18}/> Efficient</span>
+        {SKILLS.map(({ icon: Icon, label }) => (
+          <span key={label}>
+            <Icon color="#ffee00" size={18} />
+            {label}
+          </span>
+        ))}
       </div>
 
       <div className="experienceCard">

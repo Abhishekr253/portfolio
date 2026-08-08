@@ -37,14 +37,20 @@ export default function ServiceCarousel() {
   }, [active]);
 
   // play only the center (active) video
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
+useEffect(() => {
+  const video = videoRef.current;
+  if (!video) return;
 
-    video.currentTime = 0;
-    const t = setTimeout(() => video.play().catch(() => {}), 400);
-    return () => clearTimeout(t);
-  }, [active]);
+  video.pause();
+  video.src = centerItem.video;
+  video.load();
+
+  const t = setTimeout(() => {
+    video.play().catch(() => {});
+  }, 400);
+
+  return () => clearTimeout(t);
+}, [centerItem.video]);
 
   return (
     <section className="carouselSection">

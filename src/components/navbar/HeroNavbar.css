@@ -5,15 +5,13 @@
   left: 48px;
   right: 48px;
 
-  display: flex;
+  display: flex;   /* was none — this was hiding navbar on desktop entirely */
   align-items: center;
   justify-content: space-between;
 
   z-index: 9999;
 
   opacity: 0;
-
-  display: none;
 }
 
 .mobileMenu {

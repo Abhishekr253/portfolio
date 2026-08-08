@@ -1,20 +1,18 @@
 import "./HeroContent.css";
 import { forwardRef } from "react";
 
+const CALENDLY_URL = "https://calendly.com/abhishekrofficial129/30min";
+
 const HeroContent = forwardRef((props, ref) => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-
-    if (aboutSection) {
-      aboutSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+    document.getElementById("about")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   const bookACall = () => {
-    window.open("https://calendly.com/abhishekrofficial129/30min", "_blank");
+    window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -31,11 +29,11 @@ const HeroContent = forwardRef((props, ref) => {
 
       <div className="heroButtons">
         <button className="primaryBtn" onClick={bookACall}>
-          Book a Call
+          <span>Book a Call</span>
         </button>
 
         <button className="secondaryBtn" onClick={scrollToAbout}>
-          About Me
+          <span>About Me</span>
         </button>
       </div>
     </div>

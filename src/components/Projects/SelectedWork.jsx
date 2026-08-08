@@ -2,33 +2,56 @@ import React, { useEffect, useRef, useState } from "react";
 import projects from "./data";
 import "./SelectedWork.css";
 
-// How long the poster holds before the video takes over.
 const VIDEO_DELAY_MS = 1000;
 
 function ProjectCard({ project, index }) {
   const reversed = index % 2 === 1;
   const [showVideo, setShowVideo] = useState(false);
   const videoRef = useRef(null);
+  const cardRef = useRef(null);
 
   useEffect(() => {
     if (!project.video) return undefined;
 
-    const timer = setTimeout(() => {
-      setShowVideo(true);
-    }, VIDEO_DELAY_MS);
+    const cardEl = cardRef.current;
+    const videoEl = videoRef.current;
+    let delayTimer;
 
-    return () => clearTimeout(timer);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          delayTimer = setTimeout(() => {
+            setShowVideo(true);
+            if (videoEl) {
+              videoEl.currentTime = 0;
+              videoEl.play().catch(() => {});
+            }
+          }, VIDEO_DELAY_MS);
+        } else {
+          clearTimeout(delayTimer);
+          setShowVideo(false);
+          if (videoEl) {
+            videoEl.pause();
+            videoEl.currentTime = 0;
+          }
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (cardEl) observer.observe(cardEl);
+
+    return () => {
+      clearTimeout(delayTimer);
+      observer.disconnect();
+    };
   }, [project.video]);
 
-  useEffect(() => {
-    if (showVideo && videoRef.current) {
-      // Some browsers need an explicit play() call even with autoPlay set.
-      videoRef.current.play().catch(() => {});
-    }
-  }, [showVideo]);
-
   return (
-    <div className={`sw-card ${reversed ? "sw-card--reversed" : ""}`}>
+    <div
+      className={`sw-card ${reversed ? "sw-card--reversed" : ""}`}
+      ref={cardRef}
+    >
       <div className="sw-card__media">
         <div className="sw-card__browser">
           <span className="sw-dot" />
@@ -67,7 +90,6 @@ function ProjectCard({ project, index }) {
               muted
               loop
               playsInline
-              autoPlay
               preload="metadata"
             />
           )}
