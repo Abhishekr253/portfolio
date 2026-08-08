@@ -35,7 +35,7 @@ export default function Footer() {
   return (
     <footer>
 
-      <div className="footerContainer">
+      <div className="footerContainer" id="contact">
 
         <div className="footerCTA">
 

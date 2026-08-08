@@ -27,7 +27,7 @@ const HeroNavbar = forwardRef((props, ref) => {
       {/* Mobile Menu */}
       <div className={`mobileMenu ${open ? "show" : ""}`}>
         <a href="#about" onClick={() => setOpen(false)}>ABOUT</a>
-        <a href="#work" onClick={() => setOpen(false)}>WORK</a>
+        <a href="#projects" onClick={() => setOpen(false)}>WORK</a>
         <a href="#services" onClick={() => setOpen(false)}>SERVICES</a>
         <a href="#contact" onClick={() => setOpen(false)}>CONTACT</a>
       </div>
