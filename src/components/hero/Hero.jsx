@@ -46,18 +46,26 @@ export default function Hero() {
       tl.fromTo(
         text,
         { scaleX: 0.65, opacity: 0.85 },
-        { scaleX: 1, opacity: 1, duration: 0.6, ease: "power4.out" }
+        { scaleX: 1, opacity: 1, duration: 0.6, ease: "power4.out" },
       )
         .fromTo(
           image,
-          { opacity: 0, y: 80, scale: 0.96 },
-          { opacity: 1, y: 0, scale: 1, duration: 1, ease: "power3.out" },
-          "-=0.2"
+          { xPercent: -50, opacity: 0, y: 80, scale: 0.96 },
+          {
+            xPercent: -50,
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1,
+            ease: "power3.out",
+          },
+          "-=0.2",
         )
+        // ...rest unchanged
         .fromTo(
           navbarRef.current,
           { opacity: 0, y: -40 },
-          { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }
+          { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
         )
         .fromTo(
           cardsRef.current.children,
@@ -70,13 +78,13 @@ export default function Hero() {
             stagger: 0.15,
             ease: "back.out(1.7)",
           },
-          "-=0.3"
+          "-=0.3",
         )
         .fromTo(
           contentRef.current,
           { opacity: 0, y: 50 },
           { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" },
-          "-=0.35"
+          "-=0.35",
         );
 
       // ==========================
@@ -118,12 +126,7 @@ export default function Hero() {
         ABHI
       </h1>
 
-      <img
-        ref={imageRef}
-        src="/abhi.png"
-        className="heroImage"
-        alt="Abhi"
-      />
+      <img ref={imageRef} src="/abhi.png" className="heroImage" alt="Abhi" />
 
       <FloatingCards ref={cardsRef} />
 
