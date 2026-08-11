@@ -93,7 +93,7 @@ export default function Hero() {
       ScrollTrigger.create({
         trigger: heroRef.current,
         start: "top top",
-        end: "+=100%",
+        end: "+=20%",
         pin: true,
         pinSpacing: true,
         scrub: false,

@@ -26,7 +26,7 @@ const projects = [
     image: "/images/restaurant.png",
     video: "/videos/restaurant.mp4",
     stat: { value: "Reserve", label: "Your Table" },
-    link: "https://mappans.netlify.app/",
+    link: "https://indianrest.netlify.app/",
   },
 ];
 

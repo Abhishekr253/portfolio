@@ -76,7 +76,7 @@ export default function About() {
           <span className="aboutTag">ABOUT ME</span>
 
           <p className="aboutText">
-            I'm a Full Stack MERN Developer with 2+ years of experience building
+            I'm a Full Stack MERN Developer with 3+ years of experience building
             scalable, high-performance web applications that combine modern
             design with clean architecture. I've delivered solutions across
             industries, including the Lazza ERP platform, construction company
