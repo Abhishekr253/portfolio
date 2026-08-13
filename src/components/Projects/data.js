@@ -14,7 +14,7 @@ const projects = [
     image: "/images/construction.png",
     video: "/videos/construction.mp4",
     stat: { value: "78%", label: "Funding the Future" },
-    link: "https://constructionbuildx.netlify.app/",
+    // link: "https://constructionbuildx.netlify.app/",
   },
   {
     id: "restaurant-website",
@@ -26,7 +26,18 @@ const projects = [
     image: "/images/restaurant.png",
     video: "/videos/restaurant.mp4",
     stat: { value: "Reserve", label: "Your Table" },
-    link: "https://indianrest.netlify.app/",
+    // link: "https://indianrest.netlify.app/",
+  },
+    {
+    id: "clinic-website",
+    tag: "FEATURED PROJECT",
+    title: "Clinic Website",
+    description:
+      "A modern clinic website featuring a clean UI, smooth animations, responsive design, and an improved user experience for patients.",
+    stack: ["React", "GSAP", "Custom CSS", "Responsive"],
+    image: "/images/clinic.png",
+    video: "/videos/clinic.mp4",
+    stat: { value: "Reserve", label: "Your Appointment" },
   },
 ];
 

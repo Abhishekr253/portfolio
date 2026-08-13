@@ -60,9 +60,9 @@ export default function ProjectCard({ title, description, tech, poster, video, l
           ))}
         </div>
 
-        <a href={link} target="_blank" rel="noreferrer" className="projectBtn">
+        {/* <a href={link} target="_blank" rel="noreferrer" className="projectBtn">
           View Project →
-        </a>
+        </a> */}
       </div>
     </div>
   );
