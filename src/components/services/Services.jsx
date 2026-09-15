@@ -1,3 +1,4 @@
+
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -76,10 +77,12 @@ export default function Services() {
   return (
     <>
       <section className="servicesHero" ref={sectionRef} id="services">
-        {/* Background Video */}
-        <video className="servicesVideo" autoPlay muted loop playsInline>
-          <source src="/videos/bg-video.mp4" type="video/mp4" />
-        </video>
+        {/* Background Image */}
+        {/* <img
+          className="servicesImage"
+          src="/images/services-bg.png"
+          alt=""
+        /> */}
 
         {/* Dark Overlay */}
         <div className="servicesOverlay" />

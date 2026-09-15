@@ -39,6 +39,17 @@ const projects = [
     video: "/videos/clinic.mp4",
     stat: { value: "Reserve", label: "Your Appointment" },
   },
+      {
+    id: "CRM-website",
+    tag: "FEATURED PROJECT",
+    title: "CRM Website",
+    description:
+      "A modern CRM website featuring a clean UI, smooth animations, responsive design, and an improved user experience for users.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "tanstack Query", "Custom CSS", "Responsive"],
+    image: "/images/crm.jpeg",
+    video: "/videos/crm.mp4",
+    stat: { value: "Reserve", label: "Your Appointment" },
+  },
 ];
 
 export default projects;
