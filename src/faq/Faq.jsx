@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Plus, Minus } from "lucide-react";
 
-import "./FAQ.css";
+import "./Faq.css";
 
 gsap.registerPlugin(ScrollTrigger);
 

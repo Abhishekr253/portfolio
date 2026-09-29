@@ -20,7 +20,7 @@ export default function Footer() {
 
   const bookACall = () => {
     window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
-  };
+  }
 
   const getInTouch = () => {
     window.location.href = `mailto:${EMAIL}?subject=Website%20Project%20Inquiry&body=Hi%20Abhi,%0A%0AI%27m%20interested%20in%20working%20with%20you%20on%20a%20website.`;
