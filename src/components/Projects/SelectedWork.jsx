@@ -36,7 +36,7 @@ function ProjectCard({ project, index }) {
           }
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     if (cardEl) observer.observe(cardEl);
@@ -48,7 +48,7 @@ function ProjectCard({ project, index }) {
   }, [project.video]);
 
   return (
-    <div
+    <article
       className={`sw-card ${reversed ? "sw-card--reversed" : ""}`}
       ref={cardRef}
     >
@@ -65,7 +65,7 @@ function ProjectCard({ project, index }) {
                 showVideo ? "sw-card__poster--hidden" : ""
               }`}
               src={project.image}
-              alt={project.title}
+              alt={`${project.title} project developed by Abhishek R`}
             />
           ) : (
             <div
@@ -118,7 +118,7 @@ function ProjectCard({ project, index }) {
           View Project <span aria-hidden="true">→</span>
         </a> */}
       </div>
-    </div>
+    </article>
   );
 }
 

@@ -1,0 +1,82 @@
+# Abhishek R
+
+## About
+
+Abhishek R is a Full Stack MERN Developer and freelance web developer based in Kerala, India.
+
+He builds modern, responsive and performance-focused web applications and websites for businesses and clients.
+
+## Expertise
+
+- MongoDB
+- Express.js
+- React.js
+- Node.js
+- JavaScript
+- REST APIs
+- Tailwind CSS
+- Custom CSS
+- GSAP
+- Responsive Web Development
+- Frontend Development
+- Full Stack Web Development
+- CRM Applications
+- Business Websites
+- Modern Animated Websites
+
+## Services
+
+Abhishek provides freelance web development services including:
+
+- Business website development
+- Full stack web application development
+- MERN stack development
+- Responsive website development
+- Modern animated website development
+- CRM and dashboard development
+- Website performance optimization
+- Website maintenance and improvements
+
+## Selected Work
+
+### Construction Website
+
+A premium corporate website developed for a construction company to showcase its services, generate leads, and provide a responsive digital experience with smooth GSAP animations.
+
+Technologies:
+React, GSAP, Tailwind CSS, Responsive Web Development.
+
+### Restaurant Website
+
+A modern restaurant website designed to showcase the restaurant's menu, services, and brand while providing an engaging and responsive experience for customers.
+
+Technologies:
+React, GSAP, Custom CSS, Responsive Web Development.
+
+### Clinic Website
+
+A modern clinic website developed to present healthcare services and information through a clean, responsive interface with smooth animations and a patient-focused user experience.
+
+Technologies:
+React, GSAP, Custom CSS, Responsive Web Development.
+
+### Custom CRM Platform
+
+A full-stack CRM web application developed to manage business data and workflows through a responsive dashboard interface with API integration and MongoDB database management.
+
+Technologies:
+React, Node.js, Express.js, MongoDB, TanStack Query, Custom CSS.
+
+## Website
+
+https://exploreabhi.netlify.app/
+
+## Contact
+
+Email: abhishekrofficial129@gmail.com
+
+LinkedIn:
+https://www.linkedin.com/in/abhishek-r-633385282/
+
+Fiverr:
+https://www.fiverr.com/abhishekr601

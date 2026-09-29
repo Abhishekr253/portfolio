@@ -47,14 +47,14 @@ export default function Services() {
           "-=0.45",
         )
         .from(
-          ".exploreBtn",
-          {
-            y: 30,
-            opacity: 0,
-            duration: 0.6,
-          },
-          "-=0.3",
-        );
+  ".exploreBtn",
+  {
+    y: 30,
+    opacity: 1,
+    duration: 0.6,
+  },
+  "-=0.3",
+);
 
       gsap.to(".exploreArrow", {
         y: 10,
