@@ -22,7 +22,7 @@ const FloatingCards = forwardRef((props, ref) => {
       </div>
 
       <div className="experienceCard">
-        <h2>3+</h2>
+        <h2>2+</h2>
         <p>Years of Experience</p>
       </div>
 

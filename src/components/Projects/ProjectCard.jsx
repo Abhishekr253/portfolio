@@ -138,7 +138,7 @@ function ProjectCard({ project, index }) {
         </ul>
 
         {/* Uncomment when you want to show project links */}
-        {/*
+        
         {project.link && (
           <a
             href={project.link}
@@ -150,7 +150,7 @@ function ProjectCard({ project, index }) {
             <span aria-hidden="true">→</span>
           </a>
         )}
-        */}
+       
       </div>
     </article>
   );

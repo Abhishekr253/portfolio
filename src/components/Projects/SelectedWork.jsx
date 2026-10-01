@@ -114,9 +114,9 @@ function ProjectCard({ project, index }) {
           ))}
         </ul>
 
-        {/* <a href={project.link} className="sw-cta">
+        <a href={project.link} className="sw-cta">
           View Project <span aria-hidden="true">→</span>
-        </a> */}
+        </a>
       </div>
     </article>
   );

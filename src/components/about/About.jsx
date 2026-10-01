@@ -8,7 +8,7 @@ import "./About.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: 3, suffix: "+", label: "Years Experience" },
+  { value: 2, suffix: "+", label: "Years Experience" },
   { value: 10, suffix: "+", label: "Projects Delivered" },
   { value: 10, suffix: "+", label: "Happy Clients" },
   { value: 99, suffix: "%", label: "Client Satisfaction" },
@@ -76,17 +76,8 @@ export default function About() {
           <span className="aboutTag">ABOUT ME</span>
 
           <p className="aboutText">
-            I'm a Full Stack MERN Developer with 3+ years of experience building
-            scalable, high-performance web applications that combine modern
-            design with clean architecture. I've delivered solutions across
-            industries, including the Lazza ERP platform, construction company
-            websites, restaurant websites, and The Hindu Coin ecosystem,
-            helping businesses strengthen their digital presence and improve
-            user engagement. My expertise includes MongoDB, Express.js, React,
-            Node.js, Tailwind CSS, Custom CSS, GSAP, JavaScript, REST APIs,
-            and Git, allowing me to create fast, responsive, and maintainable
-            applications focused on performance, user experience, and
-            long-term business value.
+           I'm a Full Stack MERN Developer with 2+ years of experience building scalable, high-performance web applications that combine modern design with clean architecture. I've delivered solutions across industries, including the Lazza ERP platform, construction company websites, restaurant websites, and The Hindu Coin ecosystem, helping businesses strengthen their digital presence and improve user engagement. My expertise includes MongoDB, Express.js, React, Node.js, Tailwind CSS, Custom CSS, GSAP, JavaScript, REST APIs, Git, and web accessibility practices aligned with WCAG and AA-level standards, allowing me to create fast, responsive, accessible, and maintainable applications focused on performance, user experience, and long-term business value.
+
           </p>
         </div>
 
